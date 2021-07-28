@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>
+        Librería Fast Development
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Nucleo Icons -->
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="assets/css/dashboard-styles.css" rel="stylesheet" />
+</head>
+<body class="white-content">
+
+<!-- SIDEBAR (Transportar al jsp) -->
+    <div class="sidebar" id="sidebar" data="green">
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a class="simple-text logo-mini">
+            Opciones
+          </a>
+        </div>
+        <ul class="nav" style="margin-top:3rem">
+          <li style="background-color: rgba(73, 171, 158, .5);">
+            <a href="dashboard.html">
+              <i class="material-icons">home</i>
+              <p> Inicio </p>
+            </a>
+          </li>
+          <li>
+            <a href="rent.html">
+              <i class="material-icons">collections_bookmark</i>
+              <p> Arriendos </p>
+            </a>
+          </li>
+          <li>
+            <a href="buying.html">
+              <i class="material-icons">payment</i>
+              <p> Compras </p>
+            </a>
+          </li>
+          <li>
+            <a href="sales.html">
+              <i class="material-icons">storefront</i>
+              <p> Ventas </p>
+            </a>
+          </li>
+           <li>
+            <a href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+              <p> Carrito </p>
+            </a>
+          </li>
+          <li>
+            <a href="listado.html">
+              <i class="material-icons">list_alt</i>
+              <p> Existencias </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<!-- MENU HEADER -->
+
+    <div class="main-panel">
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent" id="navToggler">
+        <div class="container-fluid">
+          <div class="navbar-wrapper" id="toggler">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler" onclick="showNav()">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Fast Development</a>
+          </div>
+          <button class="navbar-toggler" type="button" onclick="headerMenu()" data-toggle="collapse"
+            data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto mr-3">
+              <li class="search-bar input-group">
+                <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i
+                    class="material-icons">search</i>
+                  <span class="d-lg-none d-md-block">Search</span>
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-link" id="search-button" data-toggle="modal">
+                  <i class="material-icons">person_outline</i>
+                  <span class="d-lg-none d-md-block">Profile</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+<!-- Parte de la tabla -->
+
+<div class="content">
+        <div class="row">
+        
+          <div class="col-md-12 ">
+            <div class="card ">
+              <div class="card-header">
+                <h4 class="card-title"> Simple Table</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Título
+                        </th>
+                        <th>
+                          Código ISBN
+                        </th>
+                        <th>
+                          Autor
+                        </th>
+                        <th>
+                          Unidades
+                        </th>
+                        <th class="text-center">
+                          Precio
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Anna Karerina
+                        </td>
+                        <td>
+                          185584851-G
+                        </td>
+                        <td>
+                          Leo Tolstoy
+                        </td>
+                        <td>
+                        Arriendo:5 <br>Venta:5
+                        </td>
+                        <td class="text-center">
+                          $13.500
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+  </div>
+</body>
+
+</html>
